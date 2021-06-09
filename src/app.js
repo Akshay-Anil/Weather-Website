@@ -51,7 +51,7 @@ app.get('/help/*',(req,res)=>{
     })
 })
 
-app.get('/weather',(req,res)=>{
+app.get('/weather',(req,res)=>{ 
     
     // console.log(req.query.search)
     if(!req.query.address){
