@@ -30,8 +30,8 @@ app.get('',(req,res)=>{
 
 app.get('/about',(req,res)=>{
     res.render('about',{
-        title : 'Weather',
-        about : 'HOT',
+        title : 'ABOUT',
+        about : 'Web Application developed using Node JS and Express JS',
         foot : 'Created by Akshay'
     })
 })
@@ -70,7 +70,11 @@ app.get('/weather',(req,res)=>{
                 
                 res.send({
                     Location: location,
-                    Forecast : wdata,
+                    Forecast : wdata.Desc,
+                    Temperature : wdata.Current_Temp,
+                    Humidity : wdata.Humidity,
+                    Presipitation : wdata.Presip,
+                    Wind_Speed : wdata.Wind_Speed,
                     Address: req.query.address
                 })    
                     // console.log("Location: ",location)

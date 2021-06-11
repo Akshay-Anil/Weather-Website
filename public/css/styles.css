@@ -1,13 +1,13 @@
-body {
-color:rgb(16, 65, 90);
-max-width: 650 px;
-margin: 0 16 px;
-padding:0 16px;
-
-display:flex;
-flex-direction: column;
-min-height: 100vh;
+body 
+{ align-content: space-between;
+    color:rgb(16, 65, 90);
+    max-width: 650 px;
+    padding:0 16px;
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
+
 .main-content{
     flex-grow: 1;
     margin:auto;
@@ -52,8 +52,14 @@ input{
 }
 button{
     cursor:pointer;
-    border: 1px solid #888888;
-    background:#888888;
+    /* border: 1px solid #888888; */
+    /* background:#888888; */
+    background: none;
+    border:none;
     color: white;
     padding: 8px;
+}
+.icon{
+    width:20px;
+    height:20px;
 }
